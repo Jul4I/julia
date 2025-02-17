@@ -3,9 +3,10 @@
     "python.analysis.autoSearchPaths": true,
     "python.analysis.extraPaths": [
         "${workspaceFolder}",
+        "${workspaceFolder}/packages/julia_api/src",
         "${workspaceFolder}/packages/julia_common/src",
-        "${workspaceFolder}/packages/julia_log/src",
         "${workspaceFolder}/packages/julia_llm/src",
+        "${workspaceFolder}/packages/julia_log/src",
     ],
     "python.envFile": "${workspaceFolder}/.env",
     "python.terminal.activateEnvironment": true,

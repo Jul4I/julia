@@ -1,0 +1,272 @@
+# LLMs y Deep Learning Roadmap
+
+## 1. Fundamentos de Deep Learning y Machine Learning
+
+- **Conceptos Básicos y Teóricos**
+    - **Tipos de Aprendizaje**:
+        - **Supervisado**:
+            - Clasificación
+            - Regresión
+            - Tareas con etiquetas
+            - ...
+        - **No Supervisado**:
+            - Clustering
+            - Reducción de dimensionalidad
+            - Detección de anomalías
+            - ...
+        - **Por Refuerzo**:
+            - Agentes
+            - Entornos
+            - Políticas de decisión
+    - **Matemáticas Fundamentales**:
+        - **Álgebra Lineal**:
+            - Vectores
+            - Matrices
+            - Descomposiciones.
+        - **Cálculo**:
+            - Derivadas
+            - Gradientes
+            - Optimización
+        - **Probabilidad y Estadística**:
+            - Distribuciones
+            - Inferencia
+            - Validación
+    - **Teoría de la Optimización**:
+        - **Funciones de pérdida**:
+            - MSE
+            - Cross Entropy
+            - Huber
+            - ...
+        - **Métodos de Optimización**:
+            - SGD
+            - Adam
+            - RMSprop
+            - Conceptos de momentum.
+            - ...
+- **Algoritmos y Técnicas de Entrenamiento**
+    - **Backpropagation** para definir un flujo de errores a través de capas y cálculo de gradientes.
+    - **Regularización**, mediante técnicas como:
+        - dropout
+        - weight decay
+        - early stopping
+        - batch normalization
+        - ...
+    - **Ajuste de Hiperparámetros**:
+        - Métodos de búsqueda:
+            - grid search
+            - random search
+            - bayesian optimization
+            - ...
+- **Arquitecturas de Modelos**
+    - **Redes Neuronales Básicas**:
+        - Perceptrones
+        - Redes multicapa (MLP)
+        - ...
+    - **Modelos Específicos**:
+        - **CNN**: Aplicaciones en visión y extracción de características.
+        - **RNN, LSTM y GRU**: Para el manejo de secuencias y datos temporales.
+        - **Transformers**: Fundamentos de autoatención, multi-head attention y positional encoding.
+    - **Transfer Learning** de modelos preentrenados para tareas específicas:
+        - Reutilización
+        - Fine-tuning
+    - **Interpretabilidad y Evaluación**
+        - **Métodos de Interpretación**:
+            - Herramientas para entender la toma de decisiones del modelo:
+                - LIME
+                - SHAP
+        - **Métricas y Validación**:
+            - Uso de métricas específicas según la tarea y técnicas de validación:
+                - cross-validation
+                - hold-out
+    - **Implementación de ANN**:
+        - visión por computador:
+            - Yolo
+        - NLP:
+            - Llama
+            - Claude
+            - Mistral
+            - Falcon
+
+## 2. Procesamiento del Lenguaje Natural (NLP) y Grandes Modelos de Lenguaje (LLMs)
+
+- **Fundamentos del Procesamiento del Lenguaje**
+    - **Preprocesamiento**:
+        - Técnicas de:
+            - tokenización
+            - stemming
+            - lematización
+            - eliminación de stopwords
+        - Normalización del texto:
+            - lowercasing
+            - eliminación de puntuación
+    - **Representaciones Textuales**:
+        - Enfoques clásicos:
+            - TF-IDF
+            - bolsas de palabras
+        - Word Embeddings:
+            - Word2Vec
+            - GloVe
+            - FastText
+- **Modelos Contextuales y Avanzados**
+    - **Representaciones Contextuales**:
+        - Modelos que generan embeddings dinámicos según el contexto:
+            - ELMo
+            - BERT
+    - **Arquitectura Transformer** en modelos como BERT y GPT:
+        - Mecanismo de:
+            - autoatención
+            - multi-head attention
+    - **Modelos Preentrenados y Fine-Tuning**:
+        - Estrategias para adaptar modelos preentrenados a tareas específicas:
+            - clasificación
+            - generación
+            - traducción
+            - ...
+        - Manejo de grandes volúmenes de datos para entrenamiento de LLMs.
+- **Evaluación y Métricas en NLP**
+    - **Métricas de Calidad**:
+        - para tareas de generación y traducción:
+            - BLEU
+            - ROUGE
+            - METEOR
+        - para tareas de clasificación:
+            - Accuracy
+            - F1-score
+            - precision
+            - recall
+    - **Consideraciones Éticas**:
+        - Identificación y mitigación de sesgos en datos y modelos.
+        - Evaluación del impacto ético y de la fairness en los sistemas NLP.
+
+## 3. Frameworks y Herramientas Específicas
+
+- **Lenguaje de Programación y Entorno de Desarrollo**
+    - **Python Avanzado**:
+        - Profundizar en:
+            - OOP
+            - patrones de diseño
+            - programación funcional
+            - ...
+        - Uso de entornos virtuales:
+            - virtualenv
+            - conda
+        - Manejo de dependencias
+    - **Control de Versiones y Colaboración**:
+        - Git
+        - GitHub/GitLab
+        - manejo de ramas
+        - flujos de trabajo colaborativos
+- **Librerías de Deep Learning y NLP**
+    - **PyTorch**:
+        - Manejo de:
+            - tensores
+            - autograd
+            - construcción
+            - entrenamiento de modelos
+        - Uso de técnicas avanzadas:
+            - para optimización y despliegue:
+                - TorchScript
+    - **TensorFlow (opcional)**:
+        - Conocimiento en Keras y la construcción de modelos de ML.
+    - **HuggingFace Transformers**:
+        - Carga
+        - Fine-tuning
+        - Despliegue de modelos preentrenados de NLP
+        - Uso de pipelines para tareas comunes
+    - **Otras Librerías**:
+        - para procesamiento lingüístico y análisis semántico:
+            - SpaCy
+            - NLTK
+            - Gensim
+        - para visión por computador, especialmente para detección de objetos:
+            - **YOLO**
+- **Herramientas para Experimentación y Despliegue**
+    - **Experiment Tracking**:
+        - para monitorizar experimentos:
+            - MLflow
+            - Weights & Biases
+            - TensorBoard
+    - **Despliegue de Modelos**:
+        - para llevar modelos a producción:
+            - ONNX
+            - Docker
+            - Kubernetes
+        - Servicios en la nube:
+            - Azure
+            - AWS
+            - GCP
+        - Pipelines de CI/CD.
+
+## 4. Optimización y Rendimiento en GPU
+
+- **Fundamentos de Arquitectura GPU**
+    - **Componentes y Funcionamiento**:
+        - Núcleos CUDA
+        - Memoria de video
+        - GPU vs CPU
+        - Conceptos de:
+            - paralelismo
+            - computación de alto rendimiento
+    - **Configuración de Entornos**:
+        - Instalación y manejo de drivers, CUDA, cuDNN y sus compatibilidades con frameworks.
+- **Optimización del Entrenamiento y Ejecución**
+    - **Manejo de Dispositivos**:
+        - Uso de métodos como `.cuda()` en PyTorch
+        - Asignación de dispositivos en TensorFlow
+    - **Estrategias de Entrenamiento**:
+        - Batching eficiente
+        - Data loaders optimizados
+        - Paralelismo en la carga de datos
+    - **Técnicas Avanzadas**:
+        - **Mixed Precision Training**: Uso de FP16 para acelerar el entrenamiento y reducir el consumo de memoria.
+        - **Distribución del Entrenamiento**:
+            - Entrenar en múltiples GPUs
+                - Data parallelism
+                - Model parallelism
+    - **Profiling y Debugging**:
+        - Herramientas para identificar cuellos de botella:
+            - PyTorch Profiler
+            - Nvidia Nsight Systems
+            - TensorBoard
+    - **Compresión de Modelos**, para optimizar modelos para producción sin pérdida significativa de desempeño:
+        - Pruning
+        - quantization
+        - knowledge distillation
+
+## 5. Habilidades de Programación y Buenas Prácticas
+
+- **Desarrollo de Software en Python**
+    - **Aplicación de Patrones y Principios**:
+        - Principios SOLID
+        - Patrones de diseño
+        - Arquitectura limpia.
+        - Estructuración modular y escalable de proyectos.
+    - **Testing y Calidad del Código**:
+        - Implementación de pruebas:
+            - unitarias
+            - integración
+            - rendimiento
+        - Uso de herramientas de análisis estático para asegurar consistencia y calidad:
+            - pylint
+            - mypy
+            - black
+    - **Documentación y Mantenimiento**:
+        - Redacción de documentación técnica clara y uso de herramientas como:
+            - Sphinx
+            - Markdown
+        - Estrategias para code review y mantenimiento colaborativo del código.
+    - **Integración Continua y Automatización**:
+        - Configuración de pipelines de CI/CD:
+            - Jenkins
+            - GitHub Actions
+            - Azure Pipelines
+        - Automatización de despliegues y tests en entornos de producción.
+- **Gestión de Proyectos y Metodologías Ágiles**
+    - **Planificación y Seguimiento**:
+        - Uso de metodologías como:
+            - Scrum
+            - Kanban
+        - Uso de herramientas de gestión:
+            - Jira
+            - Trello
+        - Comunicación efectiva y colaboración en equipos multidisciplinarios.

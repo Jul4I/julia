@@ -1,6 +1,5 @@
-import numpy as np
 import pytest
-from julia_llm.chroma import get_top_k_chroma_embeddings
+from julia_llm.rag.chroma import get_top_k_chroma_embeddings
 
 
 # Test for get_top_k_chroma_embeddings

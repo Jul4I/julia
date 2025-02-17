@@ -3,7 +3,7 @@ from julia_log import logger
 log = logger.get_logger(__name__)
 
 
-def levenshtein_distance(s1: str, s2: str) -> int:
+def levenshtein_distance(s1: str, s2: str) -> int:  # noqa: C901
     log.debug("Calculating levenshtein_distance among '%s' and '%s'", s1, s2)
     m, n = len(s1), len(s2)
 

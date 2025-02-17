@@ -2,19 +2,24 @@
 name = "julia"
 version = "0.1.0"
 description = ""
+authors = [
+    {name = "rlopc4ds",email = "rlopc4ds@gmail.com"},
+]
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "julia-common",
     "julia-log",
     "julia-llm",
+    "pydantic>=2.10.6",
     "python-dotenv>=1.0.1",
 ]
 
 [tool.uv.sources]
+julia-api = { workspace = true }
 julia-common = { workspace = true }
-julia-log = { workspace = true }
 julia-llm = { workspace = true }
+julia-log = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/*"]

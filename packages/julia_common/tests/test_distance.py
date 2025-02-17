@@ -21,4 +21,4 @@ from julia_common.distance import levenshtein_distance
     ],
 )
 def test_levenshtein_distance(str1: str, str2: str, expected: int) -> None:
-    assert levenshtein_distance(str1, str2) == expected  # noqa: S101
+    assert levenshtein_distance(str1, str2) == expected
