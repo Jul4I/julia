@@ -7,14 +7,14 @@ requires-python = ">=3.11,<3.12"
 dependencies = [
     "julia-common",
     "julia-log",
-    "julia-rag",
+    "julia-llm",
     "python-dotenv>=1.0.1",
 ]
 
 [tool.uv.sources]
 julia-common = { workspace = true }
 julia-log = { workspace = true }
-julia-rag = { workspace = true }
+julia-llm = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/*"]

@@ -5,7 +5,7 @@
         "${workspaceFolder}",
         "${workspaceFolder}/packages/julia_common/src",
         "${workspaceFolder}/packages/julia_log/src",
-        "${workspaceFolder}/packages/julia_rag/src",
+        "${workspaceFolder}/packages/julia_llm/src",
     ],
     "python.envFile": "${workspaceFolder}/.env",
     "python.terminal.activateEnvironment": true,
