@@ -1,0 +1,14 @@
+[project]
+name = "julia-common"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rlopc4ds", email = "rlopc4ds@gmail.com" }
+]
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
