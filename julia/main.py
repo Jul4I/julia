@@ -1,4 +1,7 @@
-from julia_llm.chroma import get_top_k_chroma_embeddings, invoke_openai_tplt
+from julia_llm.vector_store.chroma import (
+    get_top_k_chroma_embeddings,
+    invoke_openai_tplt,
+)
 from julia_log import logger
 
 log = logger.get_logger(__name__)

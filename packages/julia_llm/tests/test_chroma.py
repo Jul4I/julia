@@ -1,17 +1,17 @@
 import pytest
-from julia_llm.rag.chroma import get_top_k_chroma_embeddings
+from julia_llm.vector_store.chroma import get_top_k_chroma_embeddings
 
 
 # Test for get_top_k_chroma_embeddings
 def test_get_top_k_chroma_embeddings(mocker) -> None:
     # Patch TextLoader.load to return a dummy list of documents.
     dummy_text = [{"page_content": "dummy text"}]
-    mocker.patch("julia_llm.chroma_vs.TextLoader.load", return_value=dummy_text)
+    mocker.patch("julia_llm.vector_store.chroma.TextLoader.load", return_value=dummy_text)
 
     # Patch the text splitter to return dummy splits.
     dummy_splits = [{"page_content": "dummy split"}]
     mocker.patch(
-        "julia_llm.chroma_vs.RecursiveCharacterTextSplitter.split_documents",
+        "julia_llm.vector_store.chroma.RecursiveCharacterTextSplitter.split_documents",
         return_value=dummy_splits,
     )
 
@@ -29,7 +29,7 @@ def test_get_top_k_chroma_embeddings(mocker) -> None:
 
     # Patch Chroma.from_documents to return an instance of DummyChroma.
     mocker.patch(
-        "julia_llm.chroma_vs.Chroma.from_documents",
+        "julia_llm.vector_store.chroma.Chroma.from_documents",
         return_value=DummyChroma(),
     )
 

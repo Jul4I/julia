@@ -1,6 +1,6 @@
-from julia_common import logger
+from julia_log.logger import get_logger
 
-logger = logger.get_logger(__name__)
+logger = get_logger(__name__)
 
 
 def main() -> None:
